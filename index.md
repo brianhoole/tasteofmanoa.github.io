@@ -22,7 +22,14 @@ First time users will be prompted to fill out a form for their general profile i
 ![](doc/top-picks-page.PNG)
 ![](doc/your-feed-page.PNG)
 
-Future navigation bar will implement a search form and an "Our vendors" option to allow the user to update their feed page reactively based upon the given "tag" that they crave at that time. 
+Future navigation bar will implement a search form at the top of the navigation bar if a user wants to experience "new things."
+
+"Our vendors" menu option at top menu bar to simply view the food vendors that are open on campus rather than filtering the option.
+
+Social networking between users: Users can add each other as friends. Friends can later be pulled as a tag to sort their feed of food items to allow users to find common favorite items which will allow them decide where they want to it.  
+
+Google maps integration with the application to find "near by" food vendors to get food on a timely basis.
+
 
 # Installation
 
@@ -30,8 +37,8 @@ Ensure that meteor is run on your system, if not [install Meteor](https://www.me
 
 Afterwards, clone or [download a copy](https://github.com/tasteofmanoa/manoa-munchies/archive/master.zip)
 of the repository to your system.
-  
-After successfully cloning/downloading the reposity, open command prompt or terminal and enter the following commands in the app directory of the repository. 
+
+After successfully cloning/downloading the reposity, open command prompt or terminal and enter the following commands in the app directory of the repository.
 
 ```
 $ meteor npm install
@@ -40,21 +47,35 @@ $ meteor npm install
 $ meteor npm run start
 ```
 
-If your instal of our application is successful, you should see the app in your browser at [http://localhost:3000](http://localhost:3000).
+If your install of our application is successful, you should see the app in your browser at [http://localhost:3000](http://localhost:3000).
 
 
 # Development History
 
-The development process for Manoa Munchies conformed to [Issue Driven Project Management](http://courses.ics.hawaii.edu/ics314s17/modules/project-management/) practices. In a nutshell, development consists of a sequence of Milestones. Milestones consist of issues corresponding to 2-3 day tasks. GitHub projects are used to manage the processing of tasks during a milestone.  
+The development process for Manoa Munchies conformed to [Issue Driven Project Management](http://courses.ics.hawaii.edu/ics314s17/modules/project-management/) practices. Github projects were used to manage the progression through the milestones and issues by using a three column system of Backlog, In Progress, and Completed for each milestone.
 
-Documentation of the development history of Manoa Munchies are represented in milestones as shown below. 
+When two or more members are working on an issue, branch nomenclature goes by (issue)(issue #)-(first and last initials). This prevents any mixups of which branch belongs to who and one can properly evaluate who worked on what branch just by looking at the branch name.
+
+Documentation of the development history of Manoa Munchies are represented in milestones as shown below.
 
 ## Milestone 1: Mockup development WIP
+The main objective of the mockup is to get a HTML mockup of what the app should look like without the functionality.
 
-This milestone started on April 5, 207.
+This milestone started on April 5, 2017.
 
 <img width="200px" src="doc/landing-page.PNG"/>
 <img width="200px" src="doc/admin-login-page.PNG"/>
 <img width="200px" src="doc/user-login-page.PNG"/>
 <img width="200px" src="doc/your-feed-page.PNG"/>
 <img width="200px" src="doc/top-picks-page.PNG"/>
+
+Milestone one was managed using both [Manoa Munchies GitHub Issues page](https://github.com/tasteofmanoa/manoa-munchies/milestone/1) and [Manoa Munchies GitHub Projects page](https://github.com/tasteofmanoa/manoa-munchies/projects/1). Issues are sorted in order of how integral each item is to the project and/or creates a good foundation for the next issue. For example, the card element from semantic UI is an integral part in the user's experience in each page and, therefore, cards must have a good format in which information is easily digestible.
+
+![](doc/m1-issues-page.PNG)
+![](doc/m1-project-page.PNG)
+
+Each member is assigned an issue to make a mockup of. However, all members, ideally, will create their own mockup to provide a greater number of prototypes to play with in order to decide what is optimal for the user experience.
+
+As said previously, branch nomenclature goes by (issue)(issue #)-(first and last initials). This prevents any mix-ups of which branch belongs to who and one can properly evaluate who worked on what branch just by looking at the branch name. Each issue when completed will be pushed to master when it is completed.
+
+![](doc/m1-network-graph.PNG)
