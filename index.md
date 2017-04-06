@@ -28,6 +28,8 @@ Future navigation bar will implement a search form at the top of the navigation 
 
 Social networking between users: Users can add each other as friends. Friends can later be pulled as a tag to sort their feed of food items to allow users to find common favorite items which will allow them decide where they want to it.  
 
+Food vendor page/profile allows vendor to manage comments, change menu items and hour times, assign prices if needed.  
+
 Google maps integration with the application to find "near by" food vendors to get food on a timely basis.
 
 
@@ -52,9 +54,12 @@ If your install of our application is successful, you should see the app in your
 
 # Development History
 
-The development process for Manoa Munchies conformed to [Issue Driven Project Management](http://courses.ics.hawaii.edu/ics314s17/modules/project-management/) practices. Github projects were used to manage the progression through the milestones and issues by using a three column system of Backlog, In Progress, and Completed for each milestone.
+The development process for Manoa Munchies conformed to [Issue Driven Project Management](http://courses.ics.hawaii.edu/ics314s17/modules/project-management/) practices.
 
-When two or more members are working on an issue, branch nomenclature goes by (issue)(issue #)-(first and last initials). This prevents any mixups of which branch belongs to who and one can properly evaluate who worked on what branch just by looking at the branch name.
+
+Github project and issue pages were used to manage the progression of the projects using by defining "Milestones" and issues associated with each milestone.
+
+General branch management consists of a branch nomenclature of the following: (issue)(issue #)-(first and last initials). This prevents any mix-ups of which branch belongs to who and one can properly evaluate who worked on what branch just by looking at the branch name.
 
 Documentation of the development history of Manoa Munchies are represented in milestones as shown below.
 
