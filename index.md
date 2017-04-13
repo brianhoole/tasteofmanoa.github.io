@@ -6,7 +6,7 @@
 * [Installation](#installation)
 * [Development history](#development-history)
   * [Milestone 1: Mockup development](#milestone-1-mockup-development-wip)
-  * [Milestone 2: Databases and Functionality](#milestone-2-databases-and-functionality)
+  * [Milestone 2: Collections and Functionality](#milestone-2-collections-and-functionality)
 
 # About Manoa Munchies
 Manoa Munchies is about providing students of UH Manoa a better dining experience at the University of Hawaii at Manoa through providing more digestible information which allows the user to decide what food they want on any given day. In addition to providing a better dining experience for the consumers, food vendors will be able to provide information to potential customers of what food is available on the menu for all days of the week and their hours of operation.
@@ -29,10 +29,11 @@ User homepage allows the user to search for a certain craving that they have. Th
 ![](doc/user-home-page-2.png)
 
 ## Find Friends
-
+Users will be able to find their friends and be able to use the friend as a tag to find similar preferred/favorite foods.
 ![](doc/find-friends-page.PNG)
 
 ## Search results
+Search results will filter through results based on the string inputted by the user, current availability, time frame availability, friend tags, price, and tastes.
 ![](doc/your-feed-page.png)
 
 
@@ -81,7 +82,10 @@ This milestone started on April 5, 2017 and completed on April 13, 2017.
 
 Milestone one was managed using both [Manoa Munchies GitHub Issues page](https://github.com/tasteofmanoa/manoa-munchies/milestone/1) and [Manoa Munchies GitHub Projects page](https://github.com/tasteofmanoa/manoa-munchies/projects/1). Issues are sorted in order of how integral each item is to the project and/or creates a good foundation for the next issue. For example, the card element from semantic UI is an integral part in the user's experience in each page and, therefore, cards must have a good format in which information is easily digestible.
 
+Milestone 1 was implemented as [Manoa Munchies GitHub Milestone 1](https://github.com/tasteofmanoa/manoa-munchies/milestone/1)
 ![](doc/m1-issues-page.PNG)
+
+Milestone 1 consisted of seven issues which were all managed in the [Manoa Munchies GitHub Projects page](https://github.com/tasteofmanoa/manoa-munchies/projects/1).
 ![](doc/m1-project-page.PNG)
 
 Each member is assigned an issue to make a mockup of. However, all members, ideally, will create their own mockup to provide a greater number of prototypes to play with in order to decide what is optimal for the user experience.
@@ -90,5 +94,18 @@ As said previously, branch nomenclature goes by (issue)(issue #)-(first and last
 
 ![](doc/m1-network-graph.PNG)
 
-## Milestone 2: Databases and More Functionality
-The main objective is to add additional functionality to the application. 
+Milestone 1 was deployed to galaxy on April 12, 2017.
+![](doc/m1-deployment.png)
+
+## Milestone 2: Collections and More Functionality
+The main objective is to add additional functionality to the application and in order to do that, collections for the database need to be implemented. Major goals for this milestone are to implement the tastes, profile, vendor, and food item collections as well as implement sorting based on the fields within those collections. In addition, producing a script to check for user time once the collections have been implemented will get the app going to near full functionality.
+
+New nomenclature branch system: m2-(issue abbreviated)-(initials of dev working on that branch)
+
+This milestone started on April 13, 2017.
+
+Milestone 2 was implemented as [Manoa Munchies GitHub Milestone 2](https://github.com/tasteofmanoa/manoa-munchies/milestone/2)
+![](doc/m2-issues-page.PNG)
+
+Milestone 2 consisted of seven issues which were all managed in the [Manoa Munchies GitHub Projects page](https://github.com/tasteofmanoa/manoa-munchies/projects/2).
+![](doc/m2-project-page.PNG)
