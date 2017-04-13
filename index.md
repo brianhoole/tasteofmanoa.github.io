@@ -22,14 +22,14 @@ Manoa Munchies is about providing students of UH Manoa a better dining experienc
 ![](doc/edit-profile-page.png)
 
 ## User Homepage
-![](doc/user-homepage-1.png)
-![](doc/user-homepage-2.png)
+![](doc/user-home-page-1.png)
+![](doc/user-home-page-2.png)
 
 ## Find Friends
 ![](doc/find-friends-page.PNG)
 
 ## Search results
-![](doc/your-feed-page.PNG)
+![](doc/your-feed-page.png)
 
 
 # Installation
@@ -70,9 +70,9 @@ This milestone started on April 5, 2017 and completed on April 13, 2017.
 <img width="200px" src="doc/landing-page.PNG"/>
 <img width="200px" src="doc/cas-login.png"/>
 <img width="200px" src="doc/edit-profile-page.png"/>
-<img width="200px" src="doc/user-homepage-1.png"/>
+<img width="200px" src="doc/user-home-page-1.png"/>
 <img width="200px" src="doc/find-friends-page.PNG"/>
-<img width="200px" src="doc/your-feed-page.PNG"/>
+<img width="200px" src="doc/your-feed-page.png"/>
 
 
 Milestone one was managed using both [Manoa Munchies GitHub Issues page](https://github.com/tasteofmanoa/manoa-munchies/milestone/1) and [Manoa Munchies GitHub Projects page](https://github.com/tasteofmanoa/manoa-munchies/projects/1). Issues are sorted in order of how integral each item is to the project and/or creates a good foundation for the next issue. For example, the card element from semantic UI is an integral part in the user's experience in each page and, therefore, cards must have a good format in which information is easily digestible.
