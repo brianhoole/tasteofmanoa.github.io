@@ -94,7 +94,7 @@ As said previously, branch nomenclature goes by (issue)(issue #)-(first and last
 
 ![](doc/m1-network-graph.PNG)
 
-Milestone 1 was deployed to galaxy on April 12, 2017.
+Milestone 1 was deployed to [galaxy](https://tasteofmanoa.meteorapp.com) on April 12, 2017.
 ![](doc/m1-deployment.png)
 
 ## Milestone 2: Collections and More Functionality
