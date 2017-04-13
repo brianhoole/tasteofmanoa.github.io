@@ -3,7 +3,6 @@
 # Table of contents
 
 * [About Manoa Munchies](#about-manoa-munchies)
-  * [Milestone 1: Mockup development](#milestone-1-mockup-development-wip)
 * [Installation](#installation)
 * [Development history](#development-history)
   * [Milestone 1: Mockup development](#milestone-1-mockup-development-wip)
