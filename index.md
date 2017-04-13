@@ -12,19 +12,24 @@
 Manoa Munchies is about providing students of UH Manoa a better dining experience at the University of Hawaii at Manoa through providing more digestible information which allows the user to decide what food they want on any given day. In addition to providing a better dining experience for the consumers, food vendors will be able to provide information to potential customers of what food is available on the menu for all days of the week and their hours of operation.
 
 ## Landing Page
+User first arrives on the landing page where they are greeted/informed of what the app does and the services it offers.
 ![](doc/landing-page.PNG)
 
 ## UH Login
+Clicking Login from the Landing page pulls up UH Login popup. Users with UH accounts are able to sign in which routes them to profile.
 ![](doc/cas-login.png)
 
-## Edit Profile
+## Profile
+The profile page gives information about the user and updates their favorites/preferences on their user homepage based upon their preferred tags. Information given in the profile form page will be shown when other users try to find friends.
 ![](doc/edit-profile-page.png)
 
 ## User Homepage
+User homepage allows the user to search for a certain craving that they have. This can be done on any page via the top navigation search bar. The User homepage provides the user of the top picks of the day as well as their favorite food items that are available for that day.
 ![](doc/user-home-page-1.png)
 ![](doc/user-home-page-2.png)
 
 ## Find Friends
+
 ![](doc/find-friends-page.PNG)
 
 ## Search results
@@ -86,4 +91,4 @@ As said previously, branch nomenclature goes by (issue)(issue #)-(first and last
 ![](doc/m1-network-graph.PNG)
 
 ## Milestone 2: Databases and More Functionality
-The main objective is to add additional functionality to the application. In the application's state in Milestone-1, there were no coll
+The main objective is to add additional functionality to the application. 
