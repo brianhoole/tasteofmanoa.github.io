@@ -3,34 +3,33 @@
 # Table of contents
 
 * [About Manoa Munchies](#about-manoa-munchies)
+  * [Milestone 1: Mockup development](#milestone-1-mockup-development-wip)
 * [Installation](#installation)
 * [Development history](#development-history)
   * [Milestone 1: Mockup development](#milestone-1-mockup-development-wip)
+  * [Milestone 2: Databases and Functionality](#milestone-2-databases-and-functionality)
 
-## About Manoa Munchies
+# About Manoa Munchies
 Manoa Munchies is about providing students of UH Manoa a better dining experience at the University of Hawaii at Manoa through providing more digestible information which allows the user to decide what food they want on any given day. In addition to providing a better dining experience for the consumers, food vendors will be able to provide information to potential customers of what food is available on the menu for all days of the week and their hours of operation.
 
-Prospective users that first arrive at the site will appear on the landing page which will inform them about the app.
+## Landing Page
 ![](doc/landing-page.PNG)
 
-UH Manoa Login system integration with the application will allow students and/or registered vendors to login.
-![](doc/admin-login-page.PNG)
-![](doc/user-login-page.PNG)
+## UH Login
+![](doc/cas-login.png)
 
-First time users will be prompted to fill out a form for their general profile information along with key tags or likes/dislikes for food to automatically tailor the user homepage for their own personalized feed. Top picks and/or user feed page may be integrated into a single page.
+## Edit Profile
+![](doc/edit-profile-page.png)
 
-![](doc/top-picks-page.PNG)
+## User Homepage
+![](doc/user-homepage-1.png)
+![](doc/user-homepage-2.png)
+
+## Find Friends
+![](doc/find-friends-page.PNG)
+
+## Search results
 ![](doc/your-feed-page.PNG)
-
-Future navigation bar will implement a search form at the top of the navigation bar if a user wants to experience "new things."
-
-"Our vendors" menu option at top menu bar to simply view the food vendors that are open on campus rather than filtering the option.
-
-Social networking between users: Users can add each other as friends. Friends can later be pulled as a tag to sort their feed of food items to allow users to find common favorite items which will allow them decide where they want to it.  
-
-Food vendor page/profile allows vendor to manage comments, change menu items and hour times, assign prices if needed.  
-
-Google maps integration with the application to find "near by" food vendors to get food on a timely basis.
 
 
 # Installation
@@ -40,7 +39,7 @@ Ensure that meteor is run on your system, if not [install Meteor](https://www.me
 Afterwards, clone or [download a copy](https://github.com/tasteofmanoa/manoa-munchies/archive/master.zip)
 of the repository to your system.
 
-After successfully cloning/downloading the reposity, open command prompt or terminal and enter the following commands in the app directory of the repository.
+After successfully cloning/downloading the repository, open command prompt or terminal and enter the following commands in the app directory of the repository.
 
 ```
 $ meteor npm install
@@ -66,13 +65,15 @@ Documentation of the development history of Manoa Munchies are represented in mi
 ## Milestone 1: Mockup development WIP
 The main objective of the mockup is to get a HTML mockup of what the app should look like without the functionality.
 
-This milestone started on April 5, 2017.
+This milestone started on April 5, 2017 and completed on April 13, 2017.
 
 <img width="200px" src="doc/landing-page.PNG"/>
-<img width="200px" src="doc/admin-login-page.PNG"/>
-<img width="200px" src="doc/user-login-page.PNG"/>
+<img width="200px" src="doc/cas-login.png"/>
+<img width="200px" src="doc/edit-profile-page.png"/>
+<img width="200px" src="doc/user-homepage-1.png"/>
+<img width="200px" src="doc/find-friends-page.PNG"/>
 <img width="200px" src="doc/your-feed-page.PNG"/>
-<img width="200px" src="doc/top-picks-page.PNG"/>
+
 
 Milestone one was managed using both [Manoa Munchies GitHub Issues page](https://github.com/tasteofmanoa/manoa-munchies/milestone/1) and [Manoa Munchies GitHub Projects page](https://github.com/tasteofmanoa/manoa-munchies/projects/1). Issues are sorted in order of how integral each item is to the project and/or creates a good foundation for the next issue. For example, the card element from semantic UI is an integral part in the user's experience in each page and, therefore, cards must have a good format in which information is easily digestible.
 
@@ -84,3 +85,6 @@ Each member is assigned an issue to make a mockup of. However, all members, idea
 As said previously, branch nomenclature goes by (issue)(issue #)-(first and last initials). This prevents any mix-ups of which branch belongs to who and one can properly evaluate who worked on what branch just by looking at the branch name. Each issue when completed will be pushed to master when it is completed.
 
 ![](doc/m1-network-graph.PNG)
+
+## Milestone 2: Databases and More Functionality
+The main objective is to add additional functionality to the application. In the application's state in Milestone-1, there were no coll
