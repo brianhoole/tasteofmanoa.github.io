@@ -1,5 +1,3 @@
-# Current Project -- Manoa Munchies
-
 # Table of contents
 
 * [About Manoa Munchies](#about-manoa-munchies)
