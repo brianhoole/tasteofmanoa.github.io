@@ -19,16 +19,17 @@ User first arrives on the landing page where they are greeted/informed of what t
 
 ## UH Login
 Clicking Login from the Landing page pulls up UH Login popup. Users with UH accounts are able to sign in which routes them to profile.
-![](doc/cas-login.png)
+![](doc/cas-login.PNG)
 
 ## Profile
-The profile page gives information about the user and updates their favorites/preferences on their user homepage based upon their preferred tags. Information given in the profile form page will be shown when other users try to find friends.
-![](doc/edit-profile-page.png)
+The profile page gives information about the user and updates their favorites/preferences on their user homepage based upon their preferred tags. Information given in the profile form page will be shown when other users try to find friends. Profile picture will be updated reactively.
+![](doc/edit-profile-page.PNG)
+![](doc/edit-profile-page-2.PNG)
 
 ## User Homepage
 User homepage allows the user to search for a certain craving that they have. This can be done on any page via the top navigation search bar. The User homepage provides the user of the top picks of the day as well as their favorite food items that are available for that day.
-![](doc/user-home-page-1.png)
-![](doc/user-home-page-2.png)
+![](doc/user-home-page-1.PNG)
+![](doc/user-home-page-2.PNG)
 
 ## Find Friends
 Users will be able to find their friends and be able to use the friend as a tag to find similar preferred/favorite foods.
