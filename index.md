@@ -22,7 +22,7 @@ Clicking Login from the Landing page pulls up UH Login popup. Users with UH acco
 ![](doc/cas-login.PNG)
 
 ## Profile
-The profile page gives information about the user and updates their favorites/preferences on their user homepage based upon their preferred tags. Information given in the profile form page will be shown when other users try to find friends. Profile picture will be updated reactively.
+The profile page gives information about the user and updates their favorites/preferences on their user homepage based upon their preferred tags. The first time login will initialize the profile to the database. Information given in the profile form page will be shown when other users try to find friends. Profile picture will be updated reactively.
 ![](doc/edit-profile-page.PNG)
 ![](doc/edit-profile-page-2.PNG)
 
@@ -32,7 +32,7 @@ User homepage allows the user to search for a certain craving that they have. Th
 ![](doc/user-home-page-2.PNG)
 
 ## Find Friends
-Users will be able to find their friends and be able to use the friend as a tag to find similar preferred/favorite foods. Currently can only sort by tastes.
+Users will be able to find their friends and be able to use the friend as a tag to find similar preferred/favorite foods. Currently can only sort by tastes. Users are not added until they have given they're "tastes."
 ![](doc/find-friends-page.PNG)
 
 ## Search results
@@ -40,7 +40,7 @@ Search results will filter through results of food items based on the string inp
 ![](doc/your-feed-page.PNG)
 
 ## Search for vendors and Look at their page
-Search for vendors by taste/acceptance of certain payments and visit their page to see the whole menu. The menu can also be sorted if individuals wish to only see certain food items.
+Search for vendors by taste/acceptance of certain payments and visit their page to see the whole menu. The menu can also be sorted if individuals wish to only see certain food items. However, sorting has not yet been implemented due to vendor collections not working at this present time.
 ![](doc/vendor-search-page.PNG)
 ![](doc/vendor-profile-page.PNG)
 
@@ -102,7 +102,7 @@ As said previously, branch nomenclature goes by (issue)(issue #)-(first and last
 
 ![](doc/m1-network-graph.PNG)
 
-Milestone 1 was deployed to [galaxy](https://tasteofmanoa.meteorapp.com) on April 12, 2017.
+Milestone 1 was deployed to galaxy under the alias of tasteofmanoa on April 12, 2017.
 ![](doc/m1-deployment.PNG)
 
 ## Milestone 2: Collections and More Functionality
@@ -128,8 +128,10 @@ The following pages were made/edited.
 Milestone 2 was implemented as [Manoa Munchies GitHub Milestone 2](https://github.com/tasteofmanoa/manoa-munchies/milestone/2)
 ![](doc/m2-issues-page.PNG)
 
-Milestone 2 consisted of twelve issues which are all going to be managed in the [Manoa Munchies GitHub Projects page](https://github.com/tasteofmanoa/manoa-munchies/projects/2).
+Milestone 2 consisted of twelve issues which were all going to be managed in the [Manoa Munchies GitHub Projects page](https://github.com/tasteofmanoa/manoa-munchies/projects/2).
 ![](doc/m2-project-page.PNG)
+
+Failed to implement review and vendor collection properly as well as time sort functionality.
 
 New nomenclature branch system: m2-(issue abbreviated)-(initials of dev working on that branch). Work was done in branches before committing to master, mainly pulled from master to update branches.
 ![](doc/m2-network-graph.PNG)
