@@ -77,8 +77,8 @@ This milestone started on April 5, 2017 and completed on April 13, 2017.
 
 <img width="200px" src="doc/landing-page.PNG"/>
 <img width="200px" src="doc/cas-login.PNG"/>
-<img width="200px" src="doc/edit-profile-page.PNG"/>
-<img width="200px" src="doc/user-home-page-1.PNG"/>
+<img width="200px" src="doc/edit-profile-page.png"/>
+<img width="200px" src="doc/user-home-page-1.png"/>
 <img width="200px" src="doc/find-friends-page.PNG"/>
 <img width="200px" src="doc/your-feed-page.PNG"/>
 
@@ -111,6 +111,7 @@ The following pages were made/edited.
 <img width="200px" src="doc/cas-login.PNG"/>
 <img width="200px" src="doc/edit-profile-page.PNG"/>
 <img width="200px" src="doc/edit-profile-page-2.PNG"/>
+<img width="200px" src="doc/user-home-page-1.png"/>
 <img width="200px" src="doc/user-home-page-1.PNG"/>
 <img width="200px" src="doc/your-profile-page.PNG"/>
 <img width="200px" src="doc/find-friends-page.PNG"/>
@@ -121,13 +122,18 @@ The following pages were made/edited.
 Milestone 2 was implemented as [Manoa Munchies GitHub Milestone 2](https://github.com/tasteofmanoa/manoa-munchies/milestone/2)
 ![](doc/m2-issues-page.PNG)
 
-Milestone 2 currently consists of six issues which are all going to be managed in the [Manoa Munchies GitHub Projects page](https://github.com/tasteofmanoa/manoa-munchies/projects/2).
+Milestone 2 consisted of twelve issues which are all going to be managed in the [Manoa Munchies GitHub Projects page](https://github.com/tasteofmanoa/manoa-munchies/projects/2).
 ![](doc/m2-project-page.PNG)
 
 New nomenclature branch system: m2-(issue abbreviated)-(initials of dev working on that branch). Work was done in branches before committing to master, mainly pulled from master to update branches.
 ![](doc/m2-network-graph.PNG)
 
-Milestone 2 was deployed to [galaxy](https://tasteofmanoa.meteorapp.com) on April 27, 2017.
+Milestone 2 was deployed to [galaxy](https://manoamunchies.meteorapp.com) on April 27, 2017.
 ![](doc/m2-deployment.png)
 
 ## Milestone 3: Collection Revision, Functionality, and Testing
+Milestone 3 was  as [Manoa Munchies GitHub Milestone 3](https://github.com/tasteofmanoa/manoa-munchies/milestone/3)
+![](doc/m3-issues-page.PNG)
+
+Milestone 3 currently consists of five issues which are all going to be managed in the [Manoa Munchies GitHub Projects page](https://github.com/tasteofmanoa/manoa-munchies/projects/3).
+![](doc/m3-project-page.PNG)
