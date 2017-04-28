@@ -32,12 +32,17 @@ User homepage allows the user to search for a certain craving that they have. Th
 ![](doc/user-home-page-2.PNG)
 
 ## Find Friends
-Users will be able to find their friends and be able to use the friend as a tag to find similar preferred/favorite foods.
+Users will be able to find their friends and be able to use the friend as a tag to find similar preferred/favorite foods. Currently can only sort by tastes.
 ![](doc/find-friends-page.PNG)
 
 ## Search results
-Search results will filter through results based on the string inputted by the user, current availability, time frame availability, friend tags, price, and tastes.
+Search results will filter through results of food items based on the string inputted by the user, current availability, time frame availability, friend tags, price, and tastes. Currently can only sort by tastes. Mousing over a card gives the option to favorite the munchie or food item.
 ![](doc/your-feed-page.PNG)
+
+## Search for vendors and Look at their page
+Search for vendors by taste/acceptance of certain payments and visit their page to see the whole menu. The menu can also be sorted if individuals wish to only see certain food items.
+![](doc/vendor-search-page.PNG)
+![](doc/vendor-profile-page.PNG)
 
 
 # Developer Guide
@@ -107,6 +112,7 @@ New nomenclature branch system: m2-(issue abbreviated)-(initials of dev working 
 
 This milestone started on April 13, 2017 and completed on April 27, 2017.
 The following pages were made/edited.
+
 <img width="200px" src="doc/landing-page.PNG"/>
 <img width="200px" src="doc/cas-login.PNG"/>
 <img width="200px" src="doc/edit-profile-page.PNG"/>
@@ -132,7 +138,7 @@ Milestone 2 was deployed to [galaxy](https://manoamunchies.meteorapp.com) on Apr
 ![](doc/m2-deployment.PNG)
 
 ## Milestone 3: Collection Revision, Functionality, and Testing
-The main goal is to revise the availability/location portions of databases so there aren't as many redudancies in the collections. IN addition, more functionality must be added as sorting has not been fully implemented. Sorting based upon time is a key feature and must be implemented by the milestone otherwise it defeats the purpose of this application.
+The main goal is to revise the availability/location portions of databases so there aren't as many redudancies in the collections. In addition, more functionality must be added as sorting has not been fully implemented. Sorting based upon time is a key feature and must be implemented by the milestone otherwise it defeats the purpose of this application.
 
 Milestone 3 was  as [Manoa Munchies GitHub Milestone 3](https://github.com/tasteofmanoa/manoa-munchies/milestone/3)
 ![](doc/m3-issues-page.PNG)
