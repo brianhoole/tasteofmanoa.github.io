@@ -37,7 +37,7 @@ Users will be able to find their friends and be able to use the friend as a tag 
 
 ## Search results
 Search results will filter through results based on the string inputted by the user, current availability, time frame availability, friend tags, price, and tastes.
-![](doc/your-feed-page.png)
+![](doc/your-feed-page.PNG)
 
 
 # Developer Guide
@@ -77,8 +77,8 @@ This milestone started on April 5, 2017 and completed on April 13, 2017.
 
 <img width="200px" src="doc/landing-page.PNG"/>
 <img width="200px" src="doc/cas-login.PNG"/>
-<img width="200px" src="doc/edit-profile-page.png"/>
-<img width="200px" src="doc/user-home-page-1.png"/>
+<img width="200px" src="doc/edit-profile-page.PNG"/>
+<img width="200px" src="doc/user-home-page-1.PNG"/>
 <img width="200px" src="doc/find-friends-page.PNG"/>
 <img width="200px" src="doc/your-feed-page.PNG"/>
 
@@ -98,7 +98,7 @@ As said previously, branch nomenclature goes by (issue)(issue #)-(first and last
 ![](doc/m1-network-graph.PNG)
 
 Milestone 1 was deployed to [galaxy](https://tasteofmanoa.meteorapp.com) on April 12, 2017.
-![](doc/m1-deployment.png)
+![](doc/m1-deployment.PNG)
 
 ## Milestone 2: Collections and More Functionality
 The main objective is to add additional functionality to the application and in order to do that, collections for the database need to be implemented. Major goals for this milestone are to implement the tastes, profile, vendor, and food item collections as well as implement sorting based on the fields within those collections. In addition, producing a script to check for user time once the collections have been implemented will get the app going to near full functionality.
@@ -111,7 +111,7 @@ The following pages were made/edited.
 <img width="200px" src="doc/cas-login.PNG"/>
 <img width="200px" src="doc/edit-profile-page.PNG"/>
 <img width="200px" src="doc/edit-profile-page-2.PNG"/>
-<img width="200px" src="doc/user-home-page-1.png"/>
+<img width="200px" src="doc/user-home-page-1.PNG"/>
 <img width="200px" src="doc/user-home-page-1.PNG"/>
 <img width="200px" src="doc/your-profile-page.PNG"/>
 <img width="200px" src="doc/find-friends-page.PNG"/>
@@ -129,9 +129,11 @@ New nomenclature branch system: m2-(issue abbreviated)-(initials of dev working 
 ![](doc/m2-network-graph.PNG)
 
 Milestone 2 was deployed to [galaxy](https://manoamunchies.meteorapp.com) on April 27, 2017.
-![](doc/m2-deployment.png)
+![](doc/m2-deployment.PNG)
 
 ## Milestone 3: Collection Revision, Functionality, and Testing
+The main goal is to revise the availability/location portions of databases so there aren't as many redudancies in the collections. IN addition, more functionality must be added as sorting has not been fully implemented. Sorting based upon time is a key feature and must be implemented by the milestone otherwise it defeats the purpose of this application.
+
 Milestone 3 was  as [Manoa Munchies GitHub Milestone 3](https://github.com/tasteofmanoa/manoa-munchies/milestone/3)
 ![](doc/m3-issues-page.PNG)
 
