@@ -1,13 +1,17 @@
 # Table of contents
 
 * [About Manoa Munchies](#about-manoa-munchies)
-* [Installation](#installation)
+* [User Guide](#user-guide)
+* [Developer Guide](#developer-guide)
 * [Development history](#development-history)
   * [Milestone 1: Mockup development](#milestone-1-mockup-development-wip)
   * [Milestone 2: Collections and Functionality](#milestone-2-collections-and-functionality)
+  * [Milestone 3: Collection Revision, Functionality, and Testing ](#milestone-3-collection-revision,-functionality,-and-testing)
 
 # About Manoa Munchies
 Manoa Munchies is about providing students of UH Manoa a better dining experience at the University of Hawaii at Manoa through providing more digestible information which allows the user to decide what food they want on any given day. In addition to providing a better dining experience for the consumers, food vendors will be able to provide information to potential customers of what food is available on the menu for all days of the week and their hours of operation.
+
+# User Guide
 
 ## Landing Page
 User first arrives on the landing page where they are greeted/informed of what the app does and the services it offers.
@@ -35,9 +39,9 @@ Search results will filter through results based on the string inputted by the u
 ![](doc/your-feed-page.png)
 
 
-# Installation
+# Developer Guide
 
-Ensure that meteor is run on your system, if not [install Meteor](https://www.meteor.com/install).
+Ensure that the latest version meteor and most stable version of node is run on your system, if not [install Meteor](https://www.meteor.com/install).
 
 Afterwards, clone or [download a copy](https://github.com/tasteofmanoa/manoa-munchies/archive/master.zip)
 of the repository to your system.
@@ -71,11 +75,11 @@ The main objective of the mockup is to get a HTML mockup of what the app should 
 This milestone started on April 5, 2017 and completed on April 13, 2017.
 
 <img width="200px" src="doc/landing-page.PNG"/>
-<img width="200px" src="doc/cas-login.png"/>
-<img width="200px" src="doc/edit-profile-page.png"/>
-<img width="200px" src="doc/user-home-page-1.png"/>
+<img width="200px" src="doc/cas-login.PNG"/>
+<img width="200px" src="doc/edit-profile-page.PNG"/>
+<img width="200px" src="doc/user-home-page-1.PNG"/>
 <img width="200px" src="doc/find-friends-page.PNG"/>
-<img width="200px" src="doc/your-feed-page.png"/>
+<img width="200px" src="doc/your-feed-page.PNG"/>
 
 
 Milestone one was managed using both [Manoa Munchies GitHub Issues page](https://github.com/tasteofmanoa/manoa-munchies/milestone/1) and [Manoa Munchies GitHub Projects page](https://github.com/tasteofmanoa/manoa-munchies/projects/1). Issues are sorted in order of how integral each item is to the project and/or creates a good foundation for the next issue. For example, the card element from semantic UI is an integral part in the user's experience in each page and, therefore, cards must have a good format in which information is easily digestible.
@@ -100,10 +104,29 @@ The main objective is to add additional functionality to the application and in 
 
 New nomenclature branch system: m2-(issue abbreviated)-(initials of dev working on that branch)
 
-This milestone started on April 13, 2017.
+This milestone started on April 13, 2017 and completed on April 27, 2017.
+The following pages were made/edited.
+<img width="200px" src="doc/landing-page.PNG"/>
+<img width="200px" src="doc/cas-login.PNG"/>
+<img width="200px" src="doc/edit-profile-page.PNG"/>
+<img width="200px" src="doc/edit-profile-page-2.PNG"/>
+<img width="200px" src="doc/user-home-page-1.PNG"/>
+<img width="200px" src="doc/your-profile-page.PNG"/>
+<img width="200px" src="doc/find-friends-page.PNG"/>
+<img width="200px" src="doc/your-feed-page.PNG"/>
+<img width="200px" src="doc/vendor-profile-page.PNG"/>
+<img width="200px" src="doc/vendor-search-page.PNG"/>
 
 Milestone 2 was implemented as [Manoa Munchies GitHub Milestone 2](https://github.com/tasteofmanoa/manoa-munchies/milestone/2)
 ![](doc/m2-issues-page.PNG)
 
 Milestone 2 currently consists of six issues which are all going to be managed in the [Manoa Munchies GitHub Projects page](https://github.com/tasteofmanoa/manoa-munchies/projects/2).
 ![](doc/m2-project-page.PNG)
+
+New nomenclature branch system: m2-(issue abbreviated)-(initials of dev working on that branch). Work was done in branches before committing to master, mainly pulled from master to update branches.
+![](doc/m2-network-graph.PNG)
+
+Milestone 2 was deployed to [galaxy](https://tasteofmanoa.meteorapp.com) on April 27, 2017.
+![](doc/m2-deployment.png)
+
+## Milestone 3: Collection Revision, Functionality, and Testing
