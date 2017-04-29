@@ -118,12 +118,13 @@ The following pages were made/edited.
 <img width="200px" src="doc/edit-profile-page.PNG"/>
 <img width="200px" src="doc/edit-profile-page-2.PNG"/>
 <img width="200px" src="doc/user-home-page-1.PNG"/>
-<img width="200px" src="doc/user-home-page-1.PNG"/>
+<img width="200px" src="doc/user-home-page-2.PNG"/>
 <img width="200px" src="doc/your-profile-page.PNG"/>
 <img width="200px" src="doc/find-friends-page.PNG"/>
 <img width="200px" src="doc/your-feed-page.PNG"/>
 <img width="200px" src="doc/vendor-profile-page.PNG"/>
 <img width="200px" src="doc/vendor-search-page.PNG"/>
+
 
 Milestone 2 was implemented as [Manoa Munchies GitHub Milestone 2](https://github.com/tasteofmanoa/manoa-munchies/milestone/2)
 ![](doc/m2-issues-page.PNG)
