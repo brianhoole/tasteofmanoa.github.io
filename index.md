@@ -3,6 +3,7 @@
 * [About Manoa Munchies](#about-manoa-munchies)
 * [User Guide](#user-guide)
 * [Developer Guide](#developer-guide)
+* [Initial User Study](#initial-user-study)
 * [Development history](#development-history)
   * [Milestone 1: Mockup development](#milestone-1-mockup-development-wip)
   * [Milestone 2: Collections and Functionality](#milestone-2-collections-and-functionality)
@@ -62,6 +63,11 @@ $ meteor npm run start
 ```
 
 If your install of our application is successful, you should see the app in your browser at [http://localhost:3000](http://localhost:3000).
+
+# Initial User Study
+
+The initial user study for manoa munchies observed and took feedback from five UH manoa community members in which all of them belonged to the ICS program. Individuals recruited for the study were selected based upon availability (in order to maintain quality of the feedback), experience with web development (professionally, took a class, or hobbyist), and necessity to use the application on campus. UH Manoa members were added to the CAS login system for UH if they were not already on it. All user feedback was recorded via google forms.
+
 
 
 # Development History
