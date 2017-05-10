@@ -222,7 +222,7 @@ Milestone 3 was deployed to [galaxy](https://manoamunchies.meteorapp.com) on May
 
 ### Initial User Study
 
-The initial user study for manoa munchies observed and took feedback from five UH manoa community members in which all of them belonged to the ICS program. Individuals recruited for the study were selected based upon availability (in order to maintain quality of the feedback), experience with web development (professionally, took a class, or hobbyist), and necessity to use the application on campus. UH Manoa members were added to the CAS login system for UH if they were not already on it. All user feedback was recorded via google forms.
+The initial user study for manoa munchies observed and took feedback from five UH Manoa community members in which all of them belonged to the ICS program. Individuals recruited for the study were selected based upon availability (in order to maintain quality of the feedback), experience with web development (professionally, took a class, or hobbyist), and necessity to use the application on campus. UH Manoa members were added to the CAS login system for UH if they were not already on it. All user feedback was recorded via google forms.
 
 The following questions were asked of all the individuals in this study:
 - How did you test out this app?
