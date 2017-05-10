@@ -64,12 +64,6 @@ $ meteor npm run start
 
 If your install of our application is successful, you should see the app in your browser at [http://localhost:3000](http://localhost:3000).
 
-# Initial User Study
-
-The initial user study for manoa munchies observed and took feedback from five UH manoa community members in which all of them belonged to the ICS program. Individuals recruited for the study were selected based upon availability (in order to maintain quality of the feedback), experience with web development (professionally, took a class, or hobbyist), and necessity to use the application on campus. UH Manoa members were added to the CAS login system for UH if they were not already on it. All user feedback was recorded via google forms.
-
-
-
 # Development History
 
 The development process for Manoa Munchies conformed to [Issue Driven Project Management](http://courses.ics.hawaii.edu/ics314s17/modules/project-management/) practices.
@@ -112,8 +106,7 @@ Milestone 1 was deployed to galaxy under the alias of tasteofmanoa on April 12, 
 ![](doc/m1-deployment.PNG)
 
 ## Milestone 2: Collections and More Functionality
-The main objective is to add additional functionality to the application and in order to do that, collections for the database need to be implemented. Major goals for this milestone are to implement the tastes, profile, vendor, and food item collections as well as implement sorting based on the fields within those collections. In addition, producing a script to check for user time once the collections have been implemented will get the app going to near full functionality.
-
+The main objective is to add additional functionality to the application and in order to do that, collections for the database need to be implemented. Major goals for this milestone are to implement the tastes, profile, vendor, and food item collections as well as implement sorting based on the fields within those collections. In addition, producing a script to check for user time once the collections have been implemented will get the app going to near full functionality. In addition, at least five users from the UH community must
 New nomenclature branch system: m2-(issue abbreviated)-(initials of dev working on that branch)
 
 This milestone started on April 13, 2017 and completed on April 27, 2017.
@@ -147,10 +140,66 @@ Milestone 2 was deployed to [galaxy](https://manoamunchies.meteorapp.com) on Apr
 ![](doc/m2-deployment.PNG)
 
 ## Milestone 3: Collection Revision, Functionality, and Testing
-The main goal is to revise the availability/location portions of databases so there aren't as many redudancies in the collections. In addition, more functionality must be added as sorting has not been fully implemented. Sorting based upon time is a key feature and must be implemented by the milestone otherwise it defeats the purpose of this application.
+The main goal is to revise the availability/location portions of databases so there aren't as many redundancies in the collections. In addition, more functionality must be added as sorting has not been fully implemented. Sorting based upon time is a key feature and must be implemented by the milestone otherwise it defeats the purpose of this application. In addition, five individuals from the UH community had to test the application.
 
 Milestone 3 was  as [Manoa Munchies GitHub Milestone 3](https://github.com/tasteofmanoa/manoa-munchies/milestone/3)
 ![](doc/m3-issues-page.PNG)
 
 Milestone 3 currently consists of five issues which are all going to be managed in the [Manoa Munchies GitHub Projects page](https://github.com/tasteofmanoa/manoa-munchies/projects/3).
 ![](doc/m3-project-page.PNG)
+
+### Initial User Study
+
+The initial user study for manoa munchies observed and took feedback from five UH manoa community members in which all of them belonged to the ICS program. Individuals recruited for the study were selected based upon availability (in order to maintain quality of the feedback), experience with web development (professionally, took a class, or hobbyist), and necessity to use the application on campus. UH Manoa members were added to the CAS login system for UH if they were not already on it. All user feedback was recorded via google forms.
+
+The following questions were asked of all the individuals in this study:
+- How did you test out this app?
+- Would you use this app over something like Yelp?
+- Would you recommend this app to a friend?
+- What aspects of this application do you like?
+- What aspects of this application could improve?
+- What features would you add to improve this application?
+- How would you rate this application?
+- Other comments?
+
+#### Results/Analysis
+- How did you test out this app?
+
+  Individuals of this app either had access to UH CAS or had to use a developer account. Only one individual had actually used the developer account while the other most likely misreported because he/she works for UH ITS.
+  ![](doc/user-study-1.PNG)
+
+
+- Would you use this app over something like Yelp?
+
+  A majority of the users who tested the app reported that they may or may not use the app. This can be attributed to the current state of the project being unable to search and/or filter by time.
+  ![](doc/user-study-2.PNG)
+
+- Would you recommend this app to a friend?
+
+  A majority of the users reported they would recommend this app to their friends. Based on the current build that the users had tested, this most likely stemmed from the potential of the app rather than its current state. However, this shows that there is a demand for such an application for UH students.
+  ![](doc/user-study-3.PNG)
+
+- What aspects of this application do you like?
+
+  Users were very pleased with the front-end design and interface of the application as well as how it searches through menu items as opposed to solely searching/filtering through vendors.
+  ![](doc/user-study-5.PNG)
+
+- What aspects of this application could improve?
+
+  General functionality complaint due to inability to use and social functions, search functions, unimplemented pages, etc. Suggestions taken into consideration would be profile and edit profile should be on the same page.
+  ![](doc/user-study-6.PNG)
+
+- What features would you add to improve this application?
+
+  The main thing users wanted to see that wasn't already being planned to be implemented was a tutorial to provide information on how to use the application.
+  ![](doc/user-study-7.PNG)
+
+- How would you rate this application?
+
+  Average score for the application was a 3.2  which was much higher than the projected rating due to the lack of functionality of the build the users were given.
+  ![](doc/user-study-4.PNG)
+
+- Other comments?
+
+  Second comment makes a valid point about the breadth of the application, but the main point of the application did not get across that it is intended for the UH campus only.
+  ![](doc/user-study-8.PNG)
