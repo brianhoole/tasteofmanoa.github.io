@@ -184,7 +184,7 @@ This system adopts the following naming conventions:
 
 ## Data model
 
-The Manoa Munchies data model is implemented by two Javascript classes: MunchieCollection, ProfileCollection, ReviewCollection, TasteCollection, and VendorCollection. All of these classes encapsulate a MongoDB collection with the same name and export a single variable that provides access to that collection. 
+The Manoa Munchies data model is implemented by two Javascript classes: MunchieCollection, ProfileCollection, ReviewCollection, TasteCollection, and VendorCollection. All of these classes encapsulate a MongoDB collection with the same name and export a single variable that provides access to that collection.
 
 
 ## CSS
@@ -207,7 +207,7 @@ For authentication, the application uses the University of Hawaii CAS test serve
 
 When the application is run, the CAS configuration information must be present in a configuration file such as config/settings.development.json.
 
-Anyone with a UH account can login and use Manoa Munchies to create a portfolio.  A profile document is created for them if none already exists for that username.
+Anyone with a UH account can login and use Manoa Munchies to create a profile.  A profile document is created for them if none already exists for that username.
 
 ## Authorization
 
