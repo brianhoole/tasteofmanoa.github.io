@@ -3,7 +3,18 @@
 * [About Manoa Munchies](#about-manoa-munchies)
 * [User Guide](#user-guide)
 * [Developer Guide](#developer-guide)
-* [Initial User Study](#initial-user-study)
+* [Application design](#application-design)
+  * [Directory structure](#directory-structure)
+  * [Import conventions](#import-conventions)
+  * [Naming conventions](#naming-conventions)
+  * [Data model](#data-model)
+  * [CSS](#css)
+  * [Routing](#routing)
+  * [Authentication](#authentication)
+  * [Authorization](#authorization)
+  * [Configuration](#configuration)
+  * [Quality Assurance](#quality-assurance)
+    * [ESLint](#eslint)
 * [Development history](#development-history)
   * [Milestone 1: Mockup development](#milestone-1-mockup-development-wip)
   * [Milestone 2: Collections and Functionality](#milestone-2-collections-and-functionality)
@@ -44,7 +55,6 @@ Search results will filter through results of food items based on the string inp
 Search for vendors by taste/acceptance of certain payments and visit their page to see the whole menu. The menu can also be sorted if individuals wish to only see certain food items. However, sorting has not yet been implemented due to vendor collections not working at this present time.
 ![](doc/vendor-search-page-updated.PNG)
 ![](doc/vendor-profile-page.PNG)
-
 
 # Developer Guide
 
@@ -120,6 +130,118 @@ public/
 server/
    main.js       # import all the server-side js files.
 ```
+
+
+## Import conventions
+
+This system adheres to the Meteor 1.4 guideline of putting all application code in the imports/ directory, and using client/main.js and server/main.js to import the code appropriate for the client and server in an appropriate order.
+
+This system accomplishes client and server-side importing in a different manner than most Meteor sample applications. In this system, every imports/ subdirectory containing any Javascript or HTML files has a top-level index.js file that is responsible for importing all files in its associated directory.   
+
+Then, client/main.js and server/main.js are responsible for importing all the directories containing code they need. For example, here is the contents of client/main.js:
+
+```
+import '/imports/startup/client';
+import '/imports/ui/components/form-controls';
+import '/imports/ui/components/directory';
+import '/imports/ui/components/user';
+import '/imports/ui/components/landing';
+import '/imports/ui/layouts/directory';
+import '/imports/ui/layouts/landing';
+import '/imports/ui/layouts/shared';
+import '/imports/ui/layouts/user';
+import '/imports/ui/pages/directory';
+import '/imports/ui/pages/filter';
+import '/imports/ui/pages/vendor';
+import '/imports/ui/pages/landing';
+import '/imports/ui/pages/user';
+import '/imports/ui/stylesheets/style.css';
+import '/imports/api/base';
+import '/imports/api/profile';
+import '/imports/api/taste';
+import '/imports/api/munchie';
+import '/imports/api/vendor';
+import '/imports/api/review';
+
+```
+
+Apart from the last line that imports style.css directly, the other lines all invoke the index.js file in the specified directory.
+
+We use this approach to make it more simple to understand what code is loaded and in what order, and to simplify debugging when some code or templates do not appear to be loaded.  In our approach, there are only two places to look for top-level imports: the main.js files in client/ and server/, and the index.js files in import subdirectories.
+
+Note that this two-level import structure ensures that all code and templates are loaded, but does not ensure that the symbols needed in a given file are accessible.  So, for example, a symbol bound to a collection still needs to be imported into any file that references it.
+
+## Naming conventions
+
+This system adopts the following naming conventions:
+
+  * Files and directories are named in all lowercase, with words separated by hyphens. Example: accounts-config.js
+  * "Global" Javascript variables (such as collections) are capitalized. Example: Profiles.
+  * Other Javascript variables are camel-case. Example: collectionList.
+  * Templates representing pages are capitalized, with words separated by underscores. Example: Directory_Page. The files for this template are lower case, with hyphens rather than underscore. Example: directory-page.html, directory-page.js.
+  * Routes to pages are named the same as their corresponding page. Example: Directory_Page.
+
+
+## Data model
+
+The Manoa Munchies data model is implemented by two Javascript classes: MunchieCollection, ProfileCollection, ReviewCollection, TasteCollection, and VendorCollection. All of these classes encapsulate a MongoDB collection with the same name and export a single variable that provides access to that collection. 
+
+
+## CSS
+
+The application uses the [Semantic UI](http://semantic-ui.com/) CSS framework. To learn more about the Semantic UI theme integration with Meteor, see [Semantic-UI-Meteor](https://github.com/Semantic-Org/Semantic-UI-Meteor).
+
+The Semantic UI theme files are located in app/client/lib/semantic-ui directory. Because they are located in the client/ directory and not the imports/ directory, they do not need to be explicitly imported to be loaded. (Meteor automatically loads all files into the client that are located in the client/ directory).
+
+Note that the user pages contain a menu fixed to the top of the page, and thus the body element needs to have padding attached to it.  However, the landing page does not have a menu, and thus no padding should be attached to the body element on that page. To accomplish this, the router uses "triggers" to add an remove the appropriate classes from the body element when a page is visited and then left by the user.
+
+## Routing
+
+For display and navigation among its four pages, the application uses [Flow Router](https://github.com/kadirahq/flow-router).
+
+Routing is defined in imports/startup/client/router.js.
+
+## Authentication
+
+For authentication, the application uses the University of Hawaii CAS test server, and follows the approach shown in [meteor-example-uh-cas](http://ics-software-engineering.github.io/meteor-example-uh-cas/).
+
+When the application is run, the CAS configuration information must be present in a configuration file such as config/settings.development.json.
+
+Anyone with a UH account can login and use Manoa Munchies to create a portfolio.  A profile document is created for them if none already exists for that username.
+
+## Authorization
+
+The landing is public; anyone can access this page.
+
+The profile and filter pages require authorization: you must be logged in (i.e. authenticated) through the UH test CAS server, and the authenticated username returned by CAS must match the username specified in the URL.  So, for example, only the authenticated user `johnson` can access the pages `http://localhost:3000/johnson/profile` and  `http://localhost:3000/johnson/filter`.
+
+To prevent people from accessing pages they are not authorized to visit, template-based authorization is used following the recommendations in [Implementing Auth Logic and Permissions]https://kadira.io/academy/meteor-routing-guide/content/implementing-auth-logic-and-permissions).
+
+The application implements template-based authorization using an If_Authorized template, defined in If_Authorized.html and If_Authorized.js.
+
+## Configuration
+
+The config directory is intended to hold settings files.  The repository contains one file:
+config/settings.development.json
+
+The .gitignore file prevents a file named settings.production.json from being committed to the repository. So, if you are deploying the application, you can put settings in a file named settings.production.json and it will not be committed.
+
+Manoa Munchies checks on startup to see if it has an empty database in initialize-database.js, and if so, loads the file specified in the configuration file, such as settings.development.json.  For development purposes, a sample initialization for this database is in initial-collection-data.json.
+
+## Quality Assurance
+
+### ESLint
+
+Manoa Munchies includes a .eslintrc file to define the coding style adhered to in this application. You can invoke ESLint from the command line as follows:
+
+```
+meteor npm run lint
+```
+
+ESLint should run without generating any errors.  
+
+It's significantly easier to do development with ESLint integrated directly into your IDE (such as IntelliJ).
+
 # Development History
 
 The development process for Manoa Munchies conformed to [Issue Driven Project Management](http://courses.ics.hawaii.edu/ics314s17/modules/project-management/) practices.
@@ -235,43 +357,46 @@ The following questions were asked of all the individuals in this study:
 - Other comments?
 
 #### Results/Analysis
-- How did you test out this app?
+##### How did you test out this app?
 
   Individuals of this app either had access to UH CAS or had to use a developer account. Only one individual had actually used the developer account while the other most likely misreported because he/she works for UH ITS.
   ![](doc/user-study-1.PNG)
 
 
-- Would you use this app over something like Yelp?
+##### Would you use this app over something like Yelp?
 
   A majority of the users who tested the app reported that they may or may not use the app. This can be attributed to the current state of the project being unable to search and/or filter by time.
   ![](doc/user-study-2.PNG)
 
-- Would you recommend this app to a friend?
+##### Would you recommend this app to a friend?
 
   A majority of the users reported they would recommend this app to their friends. Based on the current build that the users had tested, this most likely stemmed from the potential of the app rather than its current state. However, this shows that there is a demand for such an application for UH students.
   ![](doc/user-study-3.PNG)
 
-- What aspects of this application do you like?
+##### What aspects of this application do you like?
 
   Users were very pleased with the front-end design and interface of the application as well as how it searches through menu items as opposed to solely searching/filtering through vendors.
   ![](doc/user-study-5.PNG)
 
-- What aspects of this application could improve?
+##### What aspects of this application could improve?
 
   General functionality complaint due to inability to use and social functions, search functions, unimplemented pages, etc. Suggestions taken into consideration would be profile and edit profile should be on the same page.
   ![](doc/user-study-6.PNG)
 
-- What features would you add to improve this application?
+##### What features would you add to improve this application?
 
   The main thing users wanted to see that wasn't already being planned to be implemented was a tutorial to provide information on how to use the application.
   ![](doc/user-study-7.PNG)
 
-- How would you rate this application?
+##### How would you rate this application?
 
   Average score for the application was a 3.2  which was much higher than the projected rating due to the lack of functionality of the build the users were given.
   ![](doc/user-study-4.PNG)
 
-- Other comments?
+##### Other comments?
 
   Second comment makes a valid point about the breadth of the application, but the main point of the application did not get across that it is intended for the UH campus only.
   ![](doc/user-study-8.PNG)
+
+#### Summary
+Individuals really enjoyed the overall concept of the app and the ideas that were brought to the table when they tested it. All of them wanted the application to work, functionality wise, and said that the strongest part of the application was its front-end design and interface. Front-end part of the app, in terms of designing and implementing it, was done so well due to it being the most understood concept amongst the group. The user study reflected the weakness of the group which is the backend -- functionality of the application. The thing can be nicely packaged but if it doesn't work, it might as well not be an app yet.  
