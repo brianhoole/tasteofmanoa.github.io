@@ -208,11 +208,17 @@ Altered availability field within Vendor and Munchie collections to allow for da
 
 Filenames, routing names, and template names changed to make more sense intuitively for developers.
 
-Milestone 3 was  as [Manoa Munchies GitHub Milestone 3](https://github.com/tasteofmanoa/manoa-munchies/milestone/3)
+Milestone 3 was implemented as [Manoa Munchies GitHub Milestone 3](https://github.com/tasteofmanoa/manoa-munchies/milestone/3)
 ![](doc/m3-issues-page.PNG)
 
-Milestone 3 currently consists of five issues which are all going to be managed in the [Manoa Munchies GitHub Projects page](https://github.com/tasteofmanoa/manoa-munchies/projects/3).
+Milestone 3 consisted of five issues which are all managed in the [Manoa Munchies GitHub Projects page](https://github.com/tasteofmanoa/manoa-munchies/projects/3).
 ![](doc/m3-project-page.PNG)
+
+Nomenclature branch system: m3-(issue abbreviated)-(initials of dev working on that branch). Work was done in branches before committing to master, mainly pulled from master to update branches.
+![](doc/m3-network-graph.PNG)
+
+Milestone 3 was deployed to [galaxy](https://manoamunchies.meteorapp.com) on May 9, 2017.
+![](doc/m3-deployment.PNG)
 
 ### Initial User Study
 
