@@ -44,7 +44,7 @@ User homepage allows the user to search for a certain craving that they have. Th
 ![](doc/user-home-page-2.PNG)
 
 ## Find Friends
-Users will be able to find their friends and be able to use the friend as a tag to find similar preferred/favorite foods. Currently can only sort by tastes. Users are not added until they have given they're "tastes."
+Users will be able to find their friends and be able to use the friend as a tag to find similar preferred/favorite foods. Currently can only sort by tastes. Users are not added until they have given their "tastes."
 ![](doc/find-friends-page.PNG)
 
 ## Search results
@@ -333,7 +333,7 @@ Filenames, routing names, and template names changed to make more sense intuitiv
 Milestone 3 was implemented as [Manoa Munchies GitHub Milestone 3](https://github.com/tasteofmanoa/manoa-munchies/milestone/3)
 ![](doc/m3-issues-page.PNG)
 
-Milestone 3 consisted of five issues which are all managed in the [Manoa Munchies GitHub Projects page](https://github.com/tasteofmanoa/manoa-munchies/projects/3).
+Milestone 3 consisted of six issues which are all managed in the [Manoa Munchies GitHub Projects page](https://github.com/tasteofmanoa/manoa-munchies/projects/3).
 ![](doc/m3-project-page.PNG)
 
 Nomenclature branch system: m3-(issue abbreviated)-(initials of dev working on that branch). Work was done in branches before committing to master, mainly pulled from master to update branches.
