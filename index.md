@@ -42,7 +42,7 @@ Search results will filter through results of food items based on the string inp
 
 ## Search for vendors and Look at their page
 Search for vendors by taste/acceptance of certain payments and visit their page to see the whole menu. The menu can also be sorted if individuals wish to only see certain food items. However, sorting has not yet been implemented due to vendor collections not working at this present time.
-![](doc/vendor-search-page.PNG)
+![](doc/vendor-search-page-updated.PNG)
 ![](doc/vendor-profile-page.PNG)
 
 
@@ -64,6 +64,62 @@ $ meteor npm run start
 
 If your install of our application is successful, you should see the app in your browser at [http://localhost:3000](http://localhost:3000).
 
+If any changes are made to any of the sub-directories of app/imports/api, it is required to execute:
+```
+$ meteor reset
+```
+As standard with changing any collection.
+
+# Application Design
+
+## Directory structure
+
+The top-level directory structure contains:
+
+```
+app/        # holds the Meteor application sources
+config/     # holds configuration files, such as settings.development.json
+.gitignore  # don't commit IntelliJ project files, node_modules, and settings.production.json
+```
+The separation of the actual meteor app and the config files, .json, and .ignore allow for better project management and avoid excess clutter. Consolidation of all files in a single directory is not advised for directory readability.
+
+The app/ directory has this top-level structure:
+
+```
+client/
+  lib/           # holds Semantic UI files.
+  head.html      # the <head>
+  main.js        # import all the client-side html and js files.
+
+imports/
+  api/           # Define collection processing code (client + server side)
+    base/
+    munchie/     # Collection for food items, used for favorites and vendor menus.
+    profile/     # Profiles for users
+    taste/       # associated tags with food items/vendors
+    vendor/      # Vendors of UH,
+  startup/       # Define code to run when system starts up (client-only, server-only)
+    client/        
+    server/        
+  ui/
+    components/  # templates of common components/forms that used for web development.
+    layouts/     # Layouts contain the templates that act as a base for pages that share
+                   common component templates.
+    pages/       # Pages are navigated to by FlowRouter routes.
+    stylesheets/ # CSS customizations, if any.
+
+node_modules/    # managed by Meteor
+
+private/
+  database/      # Holds the required JSON file to initialize the database. If not present,
+                   app holds no functionality on build other than profile creation.
+
+public/          
+  images/        # holds all the assets for profiles, munchies, vendors, and site graphics.
+
+server/
+   main.js       # import all the server-side js files.
+```
 # Development History
 
 The development process for Manoa Munchies conformed to [Issue Driven Project Management](http://courses.ics.hawaii.edu/ics314s17/modules/project-management/) practices.
@@ -124,6 +180,7 @@ The following pages were made/edited.
 <img width="200px" src="doc/vendor-profile-page.PNG"/>
 <img width="200px" src="doc/vendor-search-page.PNG"/>
 
+Profile, Tastes, and Munchies collection implemented and working.
 
 Milestone 2 was implemented as [Manoa Munchies GitHub Milestone 2](https://github.com/tasteofmanoa/manoa-munchies/milestone/2)
 ![](doc/m2-issues-page.PNG)
@@ -141,6 +198,15 @@ Milestone 2 was deployed to [galaxy](https://manoamunchies.meteorapp.com) on Apr
 
 ## Milestone 3: Collection Revision, Functionality, and Testing
 The main goal is to revise the availability/location portions of databases so there aren't as many redundancies in the collections. In addition, more functionality must be added as sorting has not been fully implemented. Sorting based upon time is a key feature and must be implemented by the milestone otherwise it defeats the purpose of this application. In addition, five individuals from the UH community had to test the application.
+
+This milestone started on April 27, 2017 and completed on May 9, 2017.
+
+Vendor search page bug fixed where vendors now populate the results.
+![](doc/vendor-search-page-updated.PNG)
+
+Altered availability field within Vendor and Munchie collections to allow for date retrieval in the form of a quadruple (days, start, end, location). Allows for accurate location on days where food trucks change locations.
+
+Filenames, routing names, and template names changed to make more sense intuitively for developers.
 
 Milestone 3 was  as [Manoa Munchies GitHub Milestone 3](https://github.com/tasteofmanoa/manoa-munchies/milestone/3)
 ![](doc/m3-issues-page.PNG)
