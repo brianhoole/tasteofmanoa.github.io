@@ -52,13 +52,13 @@ Search results will filter through results of food items based on the string inp
 ![](doc/your-feed-page.PNG)
 
 ## Search for vendors and Look at their page
-Search for vendors by taste/acceptance of certain payments and visit their page to see the whole menu. The menu can also be sorted if individuals wish to only see certain food items. However, sorting has not yet been implemented due to vendor collections not working at this present time.
+Search for vendors by taste/acceptance of certain payments and visit their page to see the whole menu. The menu can also be sorted if individuals wish to only see certain food items. Sorting can only be done by tastes in this current build.
 ![](doc/vendor-search-page-updated.PNG)
 ![](doc/vendor-profile-page.PNG)
 
 # Developer Guide
 
-Ensure that the latest version meteor and most stable version of node is run on your system, if not [install Meteor](https://www.meteor.com/install).
+Ensure that the latest version meteor and most stable version of node is installed on your system, if not [install Meteor](https://www.meteor.com/install).
 
 Afterwards, clone or [download a copy](https://github.com/tasteofmanoa/manoa-munchies/archive/master.zip)
 of the repository to your system.
@@ -213,7 +213,7 @@ Anyone with a UH account can login and use Manoa Munchies to create a profile.  
 
 The landing is public; anyone can access this page.
 
-The profile and filter pages require authorization: you must be logged in (i.e. authenticated) through the UH test CAS server, and the authenticated username returned by CAS must match the username specified in the URL.  So, for example, only the authenticated user `johnson` can access the pages `http://localhost:3000/johnson/profile` and  `http://localhost:3000/johnson/filter`.
+The profile and filter pages require authorization: you must be logged in (i.e. authenticated) through the UH test CAS server, and the authenticated username returned by CAS must match the username specified in the URL.
 
 To prevent people from accessing pages they are not authorized to visit, template-based authorization is used following the recommendations in [Implementing Auth Logic and Permissions]https://kadira.io/academy/meteor-routing-guide/content/implementing-auth-logic-and-permissions).
 
@@ -245,7 +245,6 @@ It's significantly easier to do development with ESLint integrated directly into
 # Development History
 
 The development process for Manoa Munchies conformed to [Issue Driven Project Management](http://courses.ics.hawaii.edu/ics314s17/modules/project-management/) practices.
-
 
 Github project and issue pages were used to manage the progression of the projects using by defining "Milestones" and issues associated with each milestone.
 
@@ -344,7 +343,7 @@ Milestone 3 was deployed to [galaxy](https://manoamunchies.meteorapp.com) on May
 
 ### Initial User Study
 
-The initial user study for manoa munchies observed and took feedback from five UH Manoa community members in which all of them belonged to the ICS program. Individuals recruited for the study were selected based upon availability (in order to maintain quality of the feedback), experience with web development (professionally, took a class, or hobbyist), and necessity to use the application on campus. UH Manoa members were added to the CAS login system for UH if they were not already on it. All user feedback was recorded via google forms.
+The initial user study for Manoa Munchies observed and took feedback from five UH Manoa community members in which all of them belonged to the ICS program. Individuals recruited for the study were selected based upon availability (in order to maintain quality of the feedback), experience with web development (professionally, took a class, or hobbyist), and necessity to use the application on campus. UH Manoa members were added to the CAS login system for UH if they were not already on it. All user feedback was recorded via google forms.
 
 The following questions were asked of all the individuals in this study:
 - How did you test out this app?
